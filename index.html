@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Here for Free Robux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        .clickbait-btn {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 20px;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .clickbait-btn:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        .surprise-message {
+            display: none;
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .joke {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Click Here for Free Robux!</h1>
+        <button class="clickbait-btn" id="clickbaitBtn">Click Here!</button>
+        <div class="surprise-message" id="surpriseMessage">
+            <p>That's right, click it like a good boy! 😄</p>
+        </div>
+    </div>
+
+    <script>
+        const clickbaitBtn = document.getElementById("clickbaitBtn");
+        const surpriseMessage = document.getElementById("surpriseMessage");
+
+        clickbaitBtn.addEventListener("click", () => {
+            surpriseMessage.style.display = "block";
+            clickbaitBtn.style.display = "none";  // Hide the clickbait button
+        });
+    </script>
+</body>
+</html>
